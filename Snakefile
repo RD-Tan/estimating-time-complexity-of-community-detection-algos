@@ -18,7 +18,7 @@ rule run_coach_scale_free:
     input:
         "synthetic/scale_free/n-{n}-m-{m}.csv"
     output:
-        "out/coach/{affinity_value}/scale_free/report-n-{n}-m-{m}.txt"
+        "out/coach/{p}/scale_free/report-n-{n}-m-{m}.txt"
     params:
         affinity_value = lambda wildcards: config['module_detection_params']['coach'][wildcards.p]
     shell:
@@ -29,7 +29,7 @@ rule run_demon_scale_free:
     input:
         "synthetic/scale_free/n-{n}-m-{m}.csv"
     output:
-        "out/demon/{epsilon_value}/scale_free/report-n-{n}-m-{m}.txt"
+        "out/demon/{p}/scale_free/report-n-{n}-m-{m}.txt"
     params:
         epsilon_value = lambda wildcards: config['module_detection_params']['demon'][wildcards.p]
     shell:
