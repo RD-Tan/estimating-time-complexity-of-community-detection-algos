@@ -1,6 +1,4 @@
-from networkx import Graph, write_edgelist, barabasi_albert_graph
-import os
-import pickle
+from networkx import write_edgelist, barabasi_albert_graph
 
 def generate_barabasi_albert(n, m, seed = 42):
     if(m > n):
