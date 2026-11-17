@@ -39,7 +39,6 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-    print(args)
     write_edgelist(generate_barabasi_albert(args.n, args.m, args.seed), args.output_file)
 
 
