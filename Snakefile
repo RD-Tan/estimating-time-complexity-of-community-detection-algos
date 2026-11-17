@@ -7,7 +7,7 @@ rule all:
         expand("out/{algo_param}/scale_free/report-n-{n}-m-{m}.txt",
                 n=[1024, 2048, 4096, 8192, 16384],
                 m=[8, 16, 32, 64, 128, 256, 512],
-                algo_affinity= [f"{algo}/{param}" for param in for algo in config["module_detection_params"]])
+                algo_affinity= [f"{algo}/{parameter}" for algo, parameters in config["module_detection_params"].items() for parameter in parameters])
 
 rule make_barabasi_albert:
     output:
