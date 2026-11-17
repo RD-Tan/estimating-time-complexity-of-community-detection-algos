@@ -1,0 +1,7 @@
+Network		Total Nodes	Total Edges	Source
+RCRN 		36_419		13_185_506	Table 1 https://doi.org/10.3389/fpls.2019.01275
+RiceNetV2	25_765		01_775_000	Table 1 https://doi.org/10.3389/fpls.2019.01275
+RiceNetV2	24_274		597_180		Counting
+STRING-Physical	04_260		01_294_058	Self calculated
+STRING		28_354		67_438_351
+STRING (all)	59.3 million	20 billion	front page https://string-db.org/
