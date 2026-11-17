@@ -11,7 +11,7 @@ rule all:
 
 rule make_barabasi_albert:
     output:
-        "synthetic/scale-free/n-{n}-m-{m}.csv"
+        "synthetic/scale_free/n-{n}-m-{m}.csv"
     shell:
         "python notebooks/scripts/generate_barabasi_albert.py "
         "{wildcards.n} {wildcards.m} {output}"
